@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+//...Ở đây bạn tự edit nha
+</head>
+<body>
+    <%
+        if(typeof(mess) != 'undefined' && mess != '') {
+    %>
+    <div style="padding: 10px; width: 100%; border-radius: 4px; background-color: #98c4ff; color: #006eff">
+    <%- mess %>
+    </div>
+    <%
+        }
+    %>
+    <form action="/register" method="POST" enctype="multipart/form-data">
+        <input name="mail" placeholder="Mail của bạn..." required>
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>
